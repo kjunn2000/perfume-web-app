@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+html,
+body{
+	height:100%;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+
+	
+}
+/* Header */
+.header{
+	min-height: 75px;
+	max-height: 75px;
+    background: transparent;
+    display:grid;
+	grid-template-columns:auto auto auto;
+	color:#fff;
+	transition:.75s;
+}
+.header:hover{
+	background-color:#d3d3d3;
+	min-height:90px;
+	max-height:90px;
+	opacity:80%;
+}
+.brand{
+	font-size:x-large;
+	font-weight:bold;
+    color:white;
+    padding-top:10px;
+    padding-left:35px;
+}
+#menu-area{
+	display:block;
+}
+#nav {
+	min-width: 545px;
+}
+#nav ul{
+
+    display:grid;
+	grid-template-columns:auto auto auto auto auto;
+}
+#nav a{
+	color:white;
+	text-decoration:none;
+	letter-spacing:3px;
+	font-weight:bold;
+	font-size:14px;
+	transition:0.5s;
+}
+#nav a:hover{
+	color:#E94B3CFF;
+	font-weight: bold;
+	font-size: larger;
+}
+#nav ul li{
+	list-style:none;
+}
+#nav ul li a{
+    text-decoration:none;
+}
+#nav ul li ul{
+    display:grid;
+    grid-template-columns:auto;
+	line-height: 40px;
+	padding-right:15px;
+}
+#nav ul li ul li{
+    list-style:none;
+    display:none;
+}
+
+#nav ul li:hover ul{
+	background:#333;
+	border-radius:15%;
+}
+#nav ul li:hover ul li{
+	display:block;
+}
+.burger{
+	float:right;
+    padding-top:10px;
+    padding-left:100px;
+}
+.burger div{
+	background-color:white;
+	width:25px;
+	height:3px;
+    margin:5px;
+}
+
+/* Main */
+.main{
+	color:#fff;
+	background-color: black;
+	
+}
+.main h1{
+	font-size:36px;
+	font-family: 'Open Sans', sans-serif;
+	color:#ffffff;
+	margin:0;
+	padding:30px;
+	text-align: center;
+	
+}
+.main .border{
+	display:block;
+	margin:auto;
+	width:160px;
+	height: 3px;
+	background-color: #FFF;
+	margin-bottom:25px;
+	
+}
+.des p{
+	width:300px;	
+	padding-left:470px;
+	text-align:center;
+}
+.layout{
+	width:1005px;
+	padding-left:130px;
+	display:grid;
+	grid-template-areas:
+		"des2 des2 des2 pic"
+		"pic2 pic2 pic2 des3"
+		"des4 des4 des4 des4";
+	grid-gap:15px;
+}
+.layout p{
+	padding:15px;
+	font-family: sans-serif;
+}
+.des2{
+    grid-area: des2;
+    height:200px;
+    background-size: cover; 
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.des2 img{
+    height:180px;
+    width:400px;
+	width:100%;
+}
+.pic{
+	grid-area: pic;
+}
+.pic img{
+	height:180px;
+	width:75%;
+}
+.pic2{
+	grid-area: pic2;
+	height:200px;
+	background-size: cover;
+}
+.pic2 iframe {
+	height:300px;
+	width:700px;
+}
+
+.des3{
+	width:300px;
+	grid-area: des3;
+	height:300px;
+    color:white;
+    transition : 1.5s all;
+
+}
+.des4{
+	grid-area: des4;
+	height:200px;
+    color:white;
+    transition : 1.5s all;
+
+    
+}
+.des3:hover{
+    border-radius: 3px;
+    box-shadow:0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+.des4:hover{
+    border-radius: 3px;
+    box-shadow:0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow:0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* footer */
+.segment-one p,.segment-two p,.segment-three p,.segment-four p{
+	color:#999;
+	line-height:25px;
+}
+
+h2,h3 {
+	color:#fff;
+	font-size:18px;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-top{
+	background:#111;
+	height:225px;
+	padding-top:30px;
+	padding-bottom:60px;
+}
+.row {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 85px;
+	padding-left:75px;
+	margin-top:0px;
+}
+.segment-one,.segment-two,.segment-three{
+	width: 200px;
+}
+.segment-four{
+	width: 273px;
+	padding-right:50px;
+}
+.segment-one h3{
+	letter-spacing:3px;
+	margin :10px 0;
+}
+
+.segment-one h3:before,.segment-two h2:before,.segment-three h2:before,.segment-four h2:before{
+	content:'|';
+	color:#c65039;
+	padding-right: 10px;
+}
+.segment-two ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+.segment-two ul li{
+	border-bottom :1px solid  rgba(255,255,255,0.3);
+	line-height: 40px;
+}
+.segment-two ul li a{
+	text-decoration:none;
+	color:#999;
+}
+.segment-four form input[type=submit]{
+	background:#c65039;
+	border:none;
+	padding:3px 15px;
+	margin-left: -5px;
+	color:#fff;
+	text-transform: uppercase;
+}
+.footer-bottom{
+	color:#999;
+	text-align:center;
+	background:#000;
+	line-height:55px;
+}
+.icons {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.icons img{
+	width:30px;
+}

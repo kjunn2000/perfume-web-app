@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+html,
+body{
+	height:100%;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background-image:url('../../JS_Basic/img/Taekwondo(logo).png');
+	background-repeat: no-repeat;
+	background-size:200px;
+	background-position: center;
+
+
+	
+}
+/* Header */
+.header{
+	min-height: 75px;
+	max-height: 75px;
+    background: transparent;
+    display:grid;
+	grid-template-columns:auto auto auto;
+	color:#fff;
+	transition:.75s;
+}
+.header:hover{
+	background-color:#d3d3d3;
+	min-height:90px;
+	max-height:90px;
+	opacity:80%;
+}
+.brand{
+	font-size:x-large;
+	font-weight:bold;
+    color:black;
+    padding-top:10px;
+    padding-left:35px;
+}
+#menu-area{
+	display:block;
+}
+#nav {
+	min-width: 545px;
+}
+#nav ul{
+
+    display:grid;
+	grid-template-columns:auto auto auto auto auto;
+}
+#nav a{
+	color:black;
+	text-decoration:none;
+	letter-spacing:3px;
+	font-weight:bold;
+	font-size:14px;
+	transition:0.5s;
+}
+#nav a:hover{
+	color:#E94B3CFF;
+	font-weight: bold;
+	font-size: larger;
+}
+#nav ul li{
+	list-style:none;
+}
+#nav ul li a{
+    text-decoration:none;
+}
+#nav ul li ul{
+    display:grid;
+    grid-template-columns:auto;
+	line-height: 40px;
+	padding-right:15px;
+}
+#nav ul li ul li{
+    list-style:none;
+    display:none;
+}
+
+#nav ul li:hover ul{
+	background:#333;
+	border-radius:15%;
+}
+#nav ul li:hover ul li{
+	display:block;
+}
+.burger{
+	float:right;
+    padding-top:10px;
+    padding-left:100px;
+}
+.burger div{
+	background-color:black;
+	width:25px;
+	height:3px;
+    margin:5px;
+}
+/* Main */
+.main{
+	margin:0;
+	padding: 90px 15px;
+	min-height:100vh;
+	font-family:'Courier New', Courier, monospace;
+	overflow: none;
+	color:black;
+	background-color: #F0F0F0;
+	
+}
+.main h1{
+	font-size:36px;
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+	margin:0;
+	padding-bottom:60px;
+	text-align: center;
+	height:25px;
+	
+}
+
+.section{
+	display:grid;
+	grid-template-columns: 30% 70%;
+	transition:0.5s all;
+}
+.section:hover{
+	background:#D3D3d3;
+	border-radius:15px;
+	box-shadow: 0 0 10px #808080, 0 0 40px #808080, 0 0 80px #808080;
+
+
+}
+.section1 img{
+	width:100%;
+	height:100%;
+	border-radius:5%;
+}
+.section2{
+	margin:10px;
+	padding:10px;
+}
+.section2 h2 a{
+	color:#333;
+	font-size: 30px;
+	height:15px;
+	display:block;
+	text-decoration:none;
+
+}
+.section3{
+	display:grid;
+	grid-template-columns: 10% 50%;
+}
+.section3 img{
+	height:25px;
+	padding-top:15px;
+	padding-left:25px;
+}
+.button{
+	
+	color:#E94B3CFF;
+	float:right;
+	padding-right:30px;
+	padding-top:5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition:0.2s;
+	padding-left:35px;
+
+}
+.button:hover{
+	color:#fff;
+	background:#E94B3CFF;
+	font-weight: bold;
+	box-shadow: 0 0 10px #E94B3CFF, 0 0 40px #E94B3CFF, 0 0 80px #E94B3CFF;
+}
+.border{
+	background:navy;
+	height: 1px;
+	width:1200px;
+}
+/* footer */
+.segment-one p,.segment-two p,.segment-three p,.segment-four p{
+	color:#999;
+	line-height:25px;
+}
+
+h2,h3 {
+	color:#fff;
+	font-size:18px;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-top{
+	background:#111;
+	height:225px;
+	padding-top:30px;
+	padding-bottom:60px;
+}
+.row {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 85px;
+	padding-left:75px;
+	margin-top:0px;
+}
+.segment-one,.segment-two,.segment-three{
+	width: 200px;
+}
+.segment-four{
+	width: 273px;
+	padding-right:50px;
+}
+.segment-one h3{
+	letter-spacing:3px;
+	margin :10px 0;
+}
+
+.segment-one h3:before,.segment-two h2:before,.segment-three h2:before,.segment-four h2:before{
+	content:'|';
+	color:#c65039;
+	padding-right: 10px;
+}
+.segment-two ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+.segment-two ul li{
+	border-bottom :1px solid  rgba(255,255,255,0.3);
+	line-height: 40px;
+}
+.segment-two ul li a{
+	text-decoration:none;
+	color:#999;
+}
+.segment-four form input[type=submit]{
+	background:#c65039;
+	border:none;
+	padding:3px 15px;
+	margin-left: -5px;
+	color:#fff;
+	text-transform: uppercase;
+}
+.footer-bottom{
+	color:#999;
+	text-align:center;
+	background:#000;
+	line-height:55px;
+}
+.icons {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.icons img{
+	width:30px;
+}
